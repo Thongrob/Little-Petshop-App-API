@@ -10,7 +10,7 @@ const authRoute = require("./routes/auth")
 const app = express()
 
 //Conect cloud database
-mongoose.connect(process.env.DATABASE,{
+mongoose.connect(process.env.DATABASE_URL,{
   useNewUrlParser:true,
   useUnifiedTopology:false
 })
