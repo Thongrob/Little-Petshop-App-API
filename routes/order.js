@@ -11,7 +11,7 @@ const {requireLogin} = require("../controllers/authController")
 // })
 
 router.post('/insert', create)
-router.get('/orders', requireLogin, readAllOrders)
+router.get('/orders', readAllOrders)
 router.get('/order/:slug', requireLogin,  singleOrder)
 router.delete('/remove/:slug', requireLogin, remove)
 router.put('/update/:slug', requireLogin, update)
